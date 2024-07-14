@@ -1,0 +1,2 @@
+function e(e){if("sign-up-name"===e)return"First Name";var t=e.split("-");return t.splice(0,2),t.map(function(e){return e.charAt(0).toUpperCase()+e.slice(1)}).join(" ")}document.querySelectorAll("input").forEach(function(t){t.placeholder=e(t.id)}),document.querySelectorAll(".field").forEach(function(t){var r=t.querySelector("input"),n=document.createElement("label");n.textContent=e(r.id),n.classList.add("field-label"),n.setAttribute("for",r.id),t.prepend(n)});
+//# sourceMappingURL=index.216c0398.js.map
